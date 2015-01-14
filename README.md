@@ -19,7 +19,7 @@ To run the server locally,
 
 `bundle exec ruby main.rb`
 
-There is also a gem for development called Guard. This is "a command line tool to easily handle events on file system modifications".
+There is also a gem for development called [Guard][]. This is "a command line tool to easily handle events on file system modifications".
 
 One of the plugins for it that is included is [LiveReload][] which will reload the browser when views are changed (requires the LiveReload extension)
 
@@ -29,4 +29,5 @@ To run Guard,
 
 
 [RVM]: http://rvm.io/
+[Guard]: http://guardgem.org
 [LiveReload]: http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-

@@ -8,10 +8,14 @@ gem 'activerecord'
 gem 'sinatra-activerecord'
 gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
-gem 'pg'
 
 group :development do
   gem 'guard'
   gem 'guard-livereload'
   gem 'tux'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
 end

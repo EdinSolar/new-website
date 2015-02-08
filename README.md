@@ -4,6 +4,13 @@ EdinSolar site
 Dependencies
 ------------
 
+###System level:
+
+* Postgresql devel
+* Sqlite devel
+
+###App:
+
 * Ruby (>= 2.0.0 preferably)
   - [RVM][] is highly recommended
 * Bundler `(sudo) gem install bundler` (Note: If you're running RVM you don't need root privileges)

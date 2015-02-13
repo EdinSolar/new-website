@@ -4,6 +4,13 @@ EdinSolar site
 Dependencies
 ------------
 
+###System level:
+
+* Postgresql devel
+* Sqlite devel
+
+###App:
+
 * Ruby (>= 2.0.0 preferably)
   - [RVM][] is highly recommended
 * Bundler `(sudo) gem install bundler` (Note: If you're running RVM you don't need root privileges)
@@ -17,7 +24,7 @@ We're hosting the site on Heroku for the moment, so please talk to Will Mathewso
 
 To run the server locally,
 
-`bundle exec ruby main.rb`
+`bundle exec rackup`
 
 There is also a gem for development called [Guard][]. This is "a command line tool to easily handle events on file system modifications".
 

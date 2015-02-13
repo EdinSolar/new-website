@@ -11,7 +11,7 @@ Dependencies
 
 ###App:
 
-* Ruby (>= 2.0.0 preferably)
+* Ruby (we're using 2.1.3)
   - [RVM][] is highly recommended
 * Bundler `(sudo) gem install bundler` (Note: If you're running RVM you don't need root privileges)
 * To install the other dependencies, run `bundle`

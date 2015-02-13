@@ -5,6 +5,8 @@ gem 'rake'
 gem 'sinatra'
 gem 'thin'
 gem 'erubis'
+
+gem 'bcrypt'
 gem 'activerecord'
 gem 'sinatra-activerecord'
 gem 'sinatra-flash'

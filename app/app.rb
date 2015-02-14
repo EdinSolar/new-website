@@ -11,3 +11,9 @@ end
 get '/index' do
   erb :index
 end
+
+get '/posts' do
+  @posts = Post.order("created_at DESC")
+  @title = "EdinSolar"
+  erb :'posts/index'
+end

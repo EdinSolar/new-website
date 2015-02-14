@@ -1,8 +1,13 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 
+require_relative 'helpers/view'
+
 require_relative 'environments'
+
 require_relative 'models/post'
+require_relative 'models/user'
+require_relative 'models/role'
 
 get '/' do
   erb :index

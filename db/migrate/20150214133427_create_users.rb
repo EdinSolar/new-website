@@ -8,7 +8,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :password_salt
       t.timestamps null: false
 
-      t.refences :role, index: true
+      t.references :role, index: true
     end
   end
 

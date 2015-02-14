@@ -29,6 +29,25 @@ get '/posts' do
   erb :'posts/index'
 end
 
+
+get '/posts/new' do
+  @post = Post.new
+  @title = "New Post"
+
+  erb :'posts/new'
+end
+
+post '/posts/new' do
+  @post = Post.new(params[:post])
+  if @post.valid?
+    @post.save
+    redirect "posts/#{@post.id}", notice: 'New post submitted'
+  else
+    redirect 'posts/new',
+      error: 'Post could not be submitted. Please make sure neither the title nor the body are blank.'
+  end
+end
+
 get '/posts/:id' do
   @post = Post.find(params[:id])
   @title = @post.title

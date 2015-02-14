@@ -1,5 +1,7 @@
 require 'sinatra'
 require 'sinatra/activerecord'
+require 'sinatra/flash'
+require 'sinatra/redirect_with_flash'
 require 'erubis'
 
 require_relative 'helpers/view'
@@ -9,6 +11,8 @@ require_relative 'environments'
 require_relative 'models/post'
 require_relative 'models/user'
 require_relative 'models/role'
+
+enable :sessions
 
 get '/' do
   erb :index

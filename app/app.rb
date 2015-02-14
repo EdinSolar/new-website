@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/activerecord'
+require 'erubis'
 
 require_relative 'helpers/view'
 

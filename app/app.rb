@@ -14,6 +14,6 @@ end
 
 get '/posts' do
   @posts = Post.order("created_at DESC")
-  @title = "EdinSolar"
+  @title = "All posts"
   erb :'posts/index'
 end

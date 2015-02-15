@@ -6,6 +6,8 @@ gem 'sinatra'
 gem 'thin'
 gem 'erubis'
 
+gem 'will_paginate'
+
 gem 'bcrypt'
 gem 'activerecord'
 gem 'sinatra-activerecord'

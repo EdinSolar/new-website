@@ -3,16 +3,20 @@ require 'sinatra/activerecord'
 require 'sinatra/flash'
 require 'sinatra/redirect_with_flash'
 require 'erubis'
+require 'raven'
 
 require_relative 'helpers/view'
 
-require_relative 'environments'
+require_relative '../config/environments'
+require_relative '../config/config'
 
 require_relative 'models/post'
 require_relative 'models/user'
 require_relative 'models/role'
 
 enable :sessions
+
+use Raven::Rack
 
 get '/' do
   erb :index

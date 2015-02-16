@@ -14,13 +14,15 @@ Dependencies
 * Ruby (we're using 2.1.3)
   - [RVM][] is highly recommended
 * Bundler `(sudo) gem install bundler` (Note: If you're running RVM you don't need root privileges)
+* [Heroku toolbelt][] (if you haven't already installed)
+* Foreman `(sudo) gem install foreman` **(Comes installed with Heroku toolbelt)**
 * To install the other dependencies, run `bundle`
 
 Running
 -------
 
-We're hosting the site on Heroku for the moment, so please talk to Will Mathewson (neanias) for access
-
+We're hosting the site on Heroku for the moment, so please talk to Will Mathewson (neanias) for access.  
+The **SUPER SECRET** DSN key file can be found on Slack.
 
 To run the server locally,
 
@@ -28,7 +30,7 @@ To run the server locally,
 
 There is also a gem for development called [Guard][]. This is "a command line tool to easily handle events on file system modifications".
 
-One of the plugins for it that is included is [LiveReload][] which will reload the browser when views are changed (requires the LiveReload extension)
+One of the plugins for it that is included is [LiveReload][] which will reload the browser when views are changed (requires the LiveReload extension).
 
 To run Guard,
 
@@ -36,5 +38,6 @@ To run Guard,
 
 
 [RVM]: http://rvm.io/
+[Heroku toolbelt]: https://toolbelt.heroku.com/
 [Guard]: http://guardgem.org
 [LiveReload]: http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-

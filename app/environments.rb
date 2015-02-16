@@ -1,3 +1,7 @@
+configure do
+  set :public_folder, './public'
+end
+
 configure :development do
   set :database, 'sqlite3:db/dev.sqlite3'
   set :show_exceptions, true

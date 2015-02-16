@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/getsentry/raven-ruby.git
+  revision: e87590fbdfc53a90eca1e56804c546aee99918b2
+  specs:
+    sentry-raven (0.12.3)
+      faraday (>= 0.7.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -27,6 +34,8 @@ GEM
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
     eventmachine (1.0.4)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.6)
     formatador (0.2.5)
     guard (2.11.1)
@@ -59,6 +68,7 @@ GEM
     method_source (0.8.2)
     minitest (5.5.1)
     multi_json (1.10.1)
+    multipart-post (2.0.0)
     nenv (0.1.1)
     notiffany (0.0.3)
       nenv (~> 0.1)
@@ -129,6 +139,7 @@ DEPENDENCIES
   guard-livereload
   pg
   rake
+  sentry-raven!
   sinatra
   sinatra-activerecord
   sinatra-flash

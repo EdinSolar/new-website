@@ -5,6 +5,7 @@ gem 'rake'
 gem 'sinatra'
 gem 'thin'
 gem 'erubis'
+gem 'sentry-raven', git: 'https://github.com/getsentry/raven-ruby.git'
 
 gem 'will_paginate'
 

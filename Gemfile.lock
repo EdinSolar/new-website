@@ -137,6 +137,7 @@ DEPENDENCIES
   guard
   guard-bundler
   guard-livereload
+  minitest
   pg
   rake
   sentry-raven!
